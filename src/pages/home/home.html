@@ -1,0 +1,35 @@
+
+<ion-content padding class="hbody">
+ 
+
+  
+  <div class="logo">
+  <img src="assets/icon/logo.png" height="150" width="100">
+  </div>
+
+    <div class="hname2">
+      XperTaste
+    </div>
+
+  <div class="add"> 
+  <input class="homeinput" type="text" placeholder="add your ingredients" [(ngModel)]="search">
+    <button class="hAdd" >
+      <img class="Hadd" src="assets/icon/HPadd.png" (click)="add()">
+    </button>
+  </div>
+
+
+  <div>
+    <ion-list inset *ngIf="searchList">
+      <div ion-item *ngFor="let item of searchList">
+        {{item}}
+        <img class="delete" src="assets/icon/Vector.png" (click)="delete(item)">
+      </div> 
+    </ion-list>
+  </div>
+
+  <div class="hEnter">
+    <button class="enterbutton" (click)="pushenter()">Enter</button>
+  </div>
+
+</ion-content>

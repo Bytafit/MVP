@@ -1,0 +1,104 @@
+// .android {
+//         page-home{
+//             ion-content{
+//                     background: url('assets/hBackground.png') no-repeat center;
+//                 }
+            
+//         }
+//     }
+
+
+page-home {
+
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+.title{
+    text-align: center; 
+    margin-top: 10px;
+    
+}
+.toolbar-title-md{
+   color: white;
+}
+.toolbar-background-md{
+    background: green;
+}
+.homeinput{
+    font-family: 'Pontano Sans', sans-serif;
+    display: inline-block;
+    color: black;
+    margin: auto;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 200;
+
+
+}
+.add{
+    
+    text-align: center;
+}
+.logo{
+    margin: auto;
+    margin-top: 15%;
+    text-align: 48%;
+    width: 170px;
+    height: 160px;
+}
+img{
+    margin-left: 35px;
+}
+.hEnter{
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 130px;
+}
+.hAdd{
+    width:40px;
+    height: 40px;
+    padding-top: 0px;
+    background-color: white;
+    margin-top: 10px;
+   }
+
+.Hadd{
+    margin-left: 0;
+    width: 25px;
+    height: 25px;
+}
+
+
+.enterbutton{
+    height: 40px;
+    width: 125px;
+    color: white;
+    font-size: 26px;
+   font-family: 'Pontano Sans', sans-serif;
+    font-weight: 300px;
+    background-color: #559931;
+}
+.homehead{
+    background-color: green;
+}
+ion-content{
+    background: url('../assets/hBackground.png') no-repeat center;
+    background-size: 100%
+}
+.hname2 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 200;
+}
+.delete{
+    height: 23px;
+    float: right;
+}
+
+}

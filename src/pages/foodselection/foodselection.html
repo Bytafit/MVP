@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="thirdtitle">
+      <span style="color: white;">{{recipe.name}}</span>
+      <img class="recipetitleimage" src="assets/icon/logo.png">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="food">
+    <img class="foodType" src="{{recipe.image}}" height="150" width="200">
+    
+ <ion-slides pager>
+       
+    <ion-slide>
+      <h4 class="slidetitle">Supplies</h4> 
+      <div class="supplies1">
+          <p class="supplies" *ngFor="let supplies of recipe.Supplies">{{supplies}}</p>
+      </div>
+
+    </ion-slide>
+
+
+    <ion-slide>
+      <h4 class="slidetitle">Ingredients</h4> 
+      <div class="ingredients1">
+          <p class="ingredients" *ngFor="let ingredient of recipe.ingredients">{{ingredient}}</p>
+      </div>
+
+    </ion-slide>
+
+
+
+
+    <ion-slide>
+      <h4 class="slidetitle">Steps</h4>
+      <div class="instrictions1">
+        <ol>
+          <li class="instructions" *ngFor="let steps of recipe.directions">{{steps}}</li>
+        </ol> 
+      </div>
+    </ion-slide>
+ </ion-slides>
+  </div>
+
+ 
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+  </ion-content>
